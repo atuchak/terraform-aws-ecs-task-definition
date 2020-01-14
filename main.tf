@@ -65,7 +65,7 @@ locals {
     )
   }"
 
-  logConfiguration = "${jsonencode(var.logConfiguration)}"
+  logConfiguration = "${var.logConfiguration}"
 
   mountPoints = "${
     replace(
